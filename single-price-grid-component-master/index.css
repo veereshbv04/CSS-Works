@@ -1,0 +1,116 @@
+@import url("https://fonts.google.com/specimen/Karla");
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    background-color: yellow;
+    margin: 4rem auto;
+    max-width: 60%;
+    
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-a{
+    background-color: #fff;
+    padding: 4rem 4rem;
+    grid-column: 1/3;
+}
+.section-a h1{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+    
+}
+.section-a h2{
+    color: hsl(71, 73%, 54%);
+}
+
+.section-a p{
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.section-b{
+    background-color: hsl(179, 62%, 43%);
+    padding: 4rem 4rem;
+    color: #fff;
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-b p{
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.price{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.section-c{
+    background-color: hsla(179, 73%, 47%, 0.89);
+    color: #fff;
+    padding: 4rem 4rem;
+}
+span{
+    opacity: 0.5;
+    font-size: small;
+}
+
+.section-c p{
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+button{
+    padding: 1rem 6rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color:hsl(71, 73%, 54%);
+    color: #fff;
+    box-shadow: rgba(53, 41, 122, 0.171) 2px 2px 10px 10px;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+
+@media(max-width:780px){
+
+    .grid{
+        margin:auto;
+        grid-template-columns: 1fr;
+    }
+
+    .section-a{
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    .section-b{
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .section-c{
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+}
