@@ -10,14 +10,23 @@
 }
 
 :root{
-    --GRAY:#969494;
+    /* --GRAY:#969494; */
+    /* --GRAY:#18def8; */
     --PRIMARY_COLOR:orange;
 }
 
 .dark{
+     --GRAY:#d1caca;
     --BACKGROUND-COLOR:#222938;
     --TEXT-COLOR:rgba(255, 255, 255, 0.92);
     --CARD-BACKGROUND:#323e58;
+}
+
+.light{
+     --GRAY:#484141;
+    --BACKGROUND-COLOR:rgba(145, 200, 242, 0.92);
+    --TEXT-COLOR: #222938;
+    --CARD-BACKGROUND:rgba(80, 151, 195, 0.92);
 }
 
 html, body{
@@ -117,7 +126,8 @@ li{
 }
 
 .sidebar-icons:hover{
-    background-color: var(--TEXT-COLOR);
+    /* background-color: var(--TEXT-COLOR); */
+    background-color: var(--CARD-BACKGROUND); 
     color: var(--BACKGROUND-COLOR);
     transition: 0.5s;
     cursor: pointer;
