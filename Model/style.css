@@ -1,0 +1,41 @@
+body{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    min-height: 100vh;
+}
+button{
+    cursor: pointer;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(128, 128, 128);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-body{
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
