@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background-div{
+    position: fixed;
+    top:40%;
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    border-top-left-radius: 10rem;
+   transform:  rotate(15deg) skew(-15deg);
+}
